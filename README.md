@@ -1,5 +1,16 @@
-# Vue 3 + Vite
+# vue files preview demo
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+The project is made for development.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Preview
+将两个项目放在同级目录下,在项目`vue-files-preview`中执行`npm run build`进行打包生成`dist`目录.
+```shell 
+# vue-files-preview
+npm run build
+```
+在项目`vue-files-preview-demo`中,先执行`npm run install`进行依赖安装,在正常`npm run dev`即可进行预览.
+```shell
+# vue-files-preview-demo
+npm run install
+npm run dev
+```
