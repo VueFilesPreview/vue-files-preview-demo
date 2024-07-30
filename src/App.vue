@@ -1,11 +1,7 @@
 <template>
   <div class="main-container">
     <div v-if="uploadFile" class="preview-container">
-<<<<<<< HEAD
-      <vue-files-preview :upload-file="uploadFile" />
-=======
-       <VueFilesPreview :upload-file="uploadFile.raw" />
->>>>>>> 4418a7c (chore: try once)
+       <FilesPreview :upload-file="uploadFile" />
     </div>
     <div v-else class="upload-btn">
       <el-upload
@@ -26,7 +22,7 @@
 import { ref } from "vue";
 import { ElUpload } from "element-plus";
 import { UploadFilled } from "@element-plus/icons-vue";
-import {VueFilesPreview} from "vue-files-preview";
+
 const uploadRef = ref();
 const uploadFile = ref();
 
