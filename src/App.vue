@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div v-if="uploadFile" class="preview-container">
-      <!-- <vue-files-preview :upload-file="uploadFile" /> -->
+      <vue-files-preview :upload-file="uploadFile" />
     </div>
     <div v-else class="upload-btn">
       <el-upload
@@ -19,10 +19,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, defineCustomElement } from "vue";
 import { ElUpload } from "element-plus";
 import { UploadFilled } from "@element-plus/icons-vue";
-// import { VueFilesPreview } from "vue-files-preview";
 
 const uploadRef = ref();
 const uploadFile = ref();
