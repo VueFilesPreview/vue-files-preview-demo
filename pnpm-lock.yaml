@@ -15,8 +15,8 @@ dependencies:
     specifier: ^3.4.31
     version: 3.4.34
   vue-files-preview:
-    specifier: ^1.0.14
-    version: 1.0.14(vue@3.4.34)
+    specifier: ^1.0.16
+    version: 1.0.16(vue@3.4.34)
 
 devDependencies:
   '@vitejs/plugin-vue':
@@ -876,8 +876,8 @@ packages:
       vue: 3.4.34
     dev: false
 
-  /vue-files-preview@1.0.14(vue@3.4.34):
-    resolution: {integrity: sha512-6NSrNq/jLTI80nJc2Iy0twPeINvGnwQO6G7cTsNp++gRe2MTdztdoa0K7i14xQ/iIaPHNOsbLO8LWdbYiqIwGg==}
+  /vue-files-preview@1.0.16(vue@3.4.34):
+    resolution: {integrity: sha512-8yHv9nF1pr/9Z76+iGZbiEQpoB0A5EB15QXF5siriYC4P8qfISgIpn/8KRZM95s1l/TL/xOcL8lAjHbEpA8Kyw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
