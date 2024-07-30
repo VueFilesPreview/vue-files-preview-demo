@@ -12,7 +12,7 @@
     "@element-plus/icons-vue": "^2.3.1",
     "element-plus": "^2.7.7",
     "vue": "^3.4.31",
-    "vue-files-preview": "^1.0.12"
+    "vue-files-preview": "^1.0.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
