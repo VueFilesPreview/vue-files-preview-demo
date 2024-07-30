@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div v-if="uploadFile" class="preview-container">
-       <FilesPreview :upload-file="uploadFile" />
+      <files-preview :upload-file="uploadFile" />
     </div>
     <div v-else class="upload-btn">
       <el-upload
@@ -27,7 +27,6 @@ const uploadRef = ref();
 const uploadFile = ref();
 
 const beforeFileUpload = (rawFile) => {
-  console.log(rawFile);
   uploadFile.value = {
     name: rawFile.name,
     size: rawFile.size,
