@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, defineCustomElement } from "vue";
+import { ref } from "vue";
 import { ElUpload } from "element-plus";
 import { UploadFilled } from "@element-plus/icons-vue";
 
