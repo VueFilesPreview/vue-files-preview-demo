@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "packageManager": "pnpm@9.6.0+",
-  "homepage": "https://VueFilesPreview.github.io/vue-files-preview-demo",
+  "homepage": "https://vuefilespreview.github.io/vue-files-preview-demo/",
   "scripts": {
     "dev": "vite",
     "dev:prod": "run-s dept:prod dev",
