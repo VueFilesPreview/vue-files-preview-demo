@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "packageManager": "pnpm@9.6.0+",
+  "homepage": "https://VueFilesPreview.github.io/vue-files-preview-demo",
   "scripts": {
     "dev": "vite",
     "dev:prod": "run-s dept:prod dev",
@@ -11,7 +12,9 @@
     "dept:prod": "pnpm i vue-files-preview@latest",
     "dept:local": "pnpm i ../vue-files-preview/dist",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pregh": "run-s dept:prod build",
+    "gh": "gh-pages -d dist"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -19,11 +22,12 @@
     "unplugin-icons": "^0.19.1",
     "vite-plugin-inspect": "^0.8.5",
     "vue": "^3.4.33",
-    "vue-files-preview": "^1.0.18"
+    "vue-files-preview": "^1.0.19"
   },
   "devDependencies": {
     "@iconify-json/ep": "^1.1.15",
     "@vitejs/plugin-vue": "^5.0.5",
+    "gh-pages": "^6.1.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.77.8",
     "un": "^0.0.0",

@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElUpload: typeof import('element-plus/es')['ElUpload']
-    'IEp=uploadFilled': typeof import('~icons/ep/=upload-filled')['default']
     IEpUploadFilled: typeof import('~icons/ep/upload-filled')['default']
   }
 }
