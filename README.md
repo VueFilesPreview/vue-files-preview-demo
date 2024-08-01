@@ -1,16 +1,20 @@
 # vue files preview demo
 
-The project is made for development.
+此项目为[vue-files-preview](https://github.com/VueFilesPreview/vue-files-preview)的预览项目,同时也为本地开发测试项目,所以在执行`dev`指令进行预览之前先明确你的目的并参考一下提示.
 
-## Preview
-将两个项目放在同级目录下,在项目`vue-files-preview`中执行`npm run build`进行打包生成`dist`目录.
-```shell 
-# vue-files-preview
-npm run build
-```
-在项目`vue-files-preview-demo`中,先执行`npm run install`进行依赖安装,在正常`npm run dev`即可进行预览.
+## 1.本地开发测试
+> 重要提示:
+> 请务必将两个项目放在同一级目录下,并且在项目`vue-files-preview`中执行了`npm run build`指令进行了打包并确保生成了`dist`目录.
+
+在项目中,执行`npm run dev:local`即可安装本地依赖并进入预览.
 ```shell
-# vue-files-preview-demo
-npm run install
-npm run dev
+# in the project 'vue-files-preview-demo'
+npm run dev:local
+```
+
+## 2.线上版本预览
+在项目中,执行`npm run dev:prod`即可安装线上版本依赖并进入预览.
+```shell
+# in the project 'vue-files-preview-demo'
+npm run dev:prod
 ```
