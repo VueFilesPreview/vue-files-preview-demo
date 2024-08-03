@@ -16,12 +16,16 @@
       </el-upload>
     </div>
   </div>
+  <div class="version">
+    ver{{version}}
+  </div>
 </template>
 
 <script lang="ts" setup>
+import VFP from "vue-files-preview";
 const uploadRef = ref();
 const uploadFile = ref();
-
+const version = VFP.version;
 const beforeFileUpload = (rawFile) => {
   uploadFile.value = rawFile;
   return false;
@@ -62,5 +66,14 @@ const beforeFileUpload = (rawFile) => {
     height: 100%;
     width: 100%;
   }
+}
+// 版本号
+.version{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 24px 36px;
+  color: grey;
+  user-select: none;
 }
 </style>
