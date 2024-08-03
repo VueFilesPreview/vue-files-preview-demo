@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div v-if="uploadFile" class="preview-container">
-      <VueFilesPreview :upload-file="uploadFile" />
+      <VueFilesPreview :file="uploadFile" />
     </div>
     <div v-else class="upload-btn">
       <el-upload
@@ -23,13 +23,7 @@ const uploadRef = ref();
 const uploadFile = ref();
 
 const beforeFileUpload = (rawFile) => {
-  uploadFile.value = {
-    name: rawFile.name,
-    size: rawFile.size,
-    status: "ready",
-    uid: rawFile.uid,
-    raw: rawFile,
-  };
+  uploadFile.value = rawFile;
   return false;
 };
 </script>
@@ -38,6 +32,9 @@ const beforeFileUpload = (rawFile) => {
 .main-container {
   display: flex;
   height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
   justify-content: center;
   align-items: center;
 
@@ -62,9 +59,8 @@ const beforeFileUpload = (rawFile) => {
   }
 
   .preview-container {
-    height: 100vh;
-    overflow: auto;
-    flex: 1;
+    height: 100%;
+    width: 100%;
   }
 }
 </style>

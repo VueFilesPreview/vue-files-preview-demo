@@ -1,6 +1,6 @@
 # vue files preview demo
 
-此项目为[vue-files-preview](https://github.com/VueFilesPreview/vue-files-preview)的预览项目,同时也为本地开发测试项目,所以在执行`dev`指令进行预览之前先明确你的目的并参考一下提示.
+此项目为[vue-files-preview](https://github.com/VueFilesPreview/vue-files-preview)的预览项目,同时也为本地开发测试项目,所以在执行`dev`指令进行预览之前先明确你的目的并参考以下提示.
 
 ## 1.本地开发测试
 > 重要提示:
