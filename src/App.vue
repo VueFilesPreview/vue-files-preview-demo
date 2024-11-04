@@ -35,12 +35,13 @@ const beforeFileUpload = (rawFile) => {
 <style lang="scss" scoped>
 .main-container {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   .upload-btn {
     width: 60%;
