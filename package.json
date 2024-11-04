@@ -9,7 +9,7 @@
     "dev": "vite",
     "dev:prod": "run-s dept:prod dev",
     "dev:local": "run-s dept:local dev",
-    "dept:prod": "pnpm i vue-files-preview@latest",
+    "dept:prod": "pnpm i vue-files-preview@latest --registry=https://registry.npmjs.com",
     "dept:local": "pnpm i ../vue-files-preview/dist",
     "build": "vite build",
     "preview": "vite preview",
@@ -22,7 +22,7 @@
     "unplugin-icons": "^0.19.1",
     "vite-plugin-inspect": "^0.8.5",
     "vue": "^3.4.35",
-    "vue-files-preview": "^1.0.33"
+    "vue-files-preview": "^1.0.34"
   },
   "devDependencies": {
     "@iconify-json/ep": "^1.1.15",
